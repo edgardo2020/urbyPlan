@@ -11,6 +11,7 @@
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/jquery.maphighlight.min.js"></script>
     <script src="js/imageMapResizer.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script type="text/javascript"></script>   
 <body>
     <header class="header__body">
@@ -137,9 +138,25 @@ Asimismo, ser una empresa que brinde una adecuada interpretación del territorio
                 <div class="main__div__experiencia__titulo">
                     <h2 >NUESTRA EXPERIENCIA</h2>
                 </div>
-                <div class="main__div__experiencia__img">
+
+                <div id="mapa">
+                    <aside class="experiencia__lista-estados" aria-label="Estados con presencia">
+                        <ul>
+                            <li class="lista__normal marker-very-high" data-estado="Aguascalientes">Aguascalientes</li>
+                            <li class="lista__resaltado marker-high" data-estado="Baja California Sur">Baja California Sur</li>
+                            <li class="lista__resaltado marker-medium" data-estado="Oaxaca">Oaxaca</li>
+                            <li class="lista__normal marker-very-high" data-estado="Puebla">Puebla</li>
+                            <li class="lista__normal marker-high" data-estado="Quintana Roo">Quintana Roo</li>
+                            <li class="lista__resaltado marker-high" data-estado="Tabasco">Tabasco</li>
+                            <li class="lista__resaltado marker-low" data-estado="Tlaxcala">Tlaxcala</li>
+                            <li class="lista__resaltado marker-low-medium" data-estado="Veracruz">Veracruz</li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="tooltip" id="tooltip"></div>
+                <!--<div class="main__div__experiencia__img">
                     <img src="/imagenes/mapa_experiencia.jpeg" alt="mapa">
-                </div> 
+                </div> -->
             </div>
         </div>
 <div id="Contacto" class="main__div__separador_4"></div>   
@@ -211,5 +228,6 @@ Asimismo, ser una empresa que brinde una adecuada interpretación del territorio
             <p> &copy;2025 Derechos Reservados Powered by <span>MARELL AGENCY</span> | <a href="https://urbyplan.mx/archivos_urby/Aviso%20Privacidad%20Integral%20Urbyplan_.pdf" target="_blank">Aviso de Privacidad</a> </p>
         </div>
     </footer>
+    <script src="/mapa.js"></script>
 </body>
 </html>
