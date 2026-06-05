@@ -806,39 +806,71 @@ html {
     color: #009cde;
 }
 
+.main__div__servicios__titulo{
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 25;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
 
 .main__div__servicios__titulo h2{
-    margin: auto;
-    margin-top: 110px;
+    margin: 0;
     text-align: center;
-    font-size: 20px;
-    width: 450px;
-    margin-bottom: -150px;
+    font-size: clamp(18px, 2.2vw, 20px);
+    width: min(450px, calc(100% - 48px));
     background-color: #15334b;
     border-radius: 25px;
-    padding: 15px;
+    padding: 14px 18px;
     font-weight: 800;
     color: #ececec;
 }
 
 #titulo_h2{
-    margin-top: -10px;
+    margin-top: 0;
 }
 
 .main__div__servicios{
     margin-bottom: 0;
     width: 100%;
     height: 100%;
+    position: relative;
+    padding-top: 20px;
     background-image: url('/imagenes/fondo_servicios_1000.png');
     background-size:cover;
     background-repeat:no-repeat;
     background-position:left;
 }
 
+@media screen and (max-width:900px) {
+    .main__div__servicios__titulo{
+        top: 14px;
+    }
+
+    .main__div__servicios{
+        padding-top: 22px;
+    }
+}
+
 
 @media screen and (max-width:500px) {
+    .main__div__servicios__titulo{
+        top: 10px;
+    }
+
     .main__div__servicios__titulo h2{
-        width: 300px;
+        width: min(320px, calc(100% - 24px));
+        font-size: 17px;
+        padding: 12px 14px;
+    }
+
+    .main__div__servicios{
+        padding-top: 18px;
     }
 }
 
@@ -1056,50 +1088,63 @@ transition: all .4s;
 .main__div__experiencia{
     height: auto;
     margin: 0;
+    margin-top: -45px;
+    z-index: 100;
+    position: relative;
+    padding-top: 26px;
 }
 
 .main__div__experiencia__titulo{
-    margin-top: -10px;
-}
-
-
-@media screen and (max-width:760px){
-    .main__div__experiencia__titulo{
-        margin-top: -60px;
-    }
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 25;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
 }
 
 .main__div__experiencia h2{
-    margin-top: 100px;
+    margin: 0;
     text-align: center;
-    font-size: 20px;
+    font-size: clamp(18px, 2.2vw, 20px);
     background-color: #15334b;
-    width: 450px;
-    padding: 15px;
+    width: min(450px, calc(100% - 48px));
+    padding: 14px 18px;
     border-radius: 25px;
     font-weight: 800;
     color: #ececec;
     position: relative;
     align-items: center;
     justify-content: center;
-    margin: auto;
+}
+
+@media screen and (max-width:900px) {
+    .main__div__experiencia__titulo{
+        top: 14px;
+    }
+
+    .main__div__experiencia{
+        padding-top: 22px;
+    }
 }
 
 @media screen and (max-width:500px) {
-    .main__div__experiencia h2{
-        width: 300px;
+    .main__div__experiencia__titulo{
+        top: 10px;
     }
-}
 
-@media screen and (min-width: 510px){
     .main__div__experiencia h2{
-        margin-top: 20px;
+        width: min(320px, calc(100% - 24px));
+        font-size: 17px;
+        padding: 12px 14px;
     }
-}
 
-.main__div__experiencia{
-    margin-top: -45px;
-    z-index: 100;
+    .main__div__experiencia{
+        padding-top: 18px;
+    }
 }
 
 .experiencia__lista-estados{
