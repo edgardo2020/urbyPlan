@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.maphighlight.min.js"></script>
+    <script src="js/imageMapResizer.min.js"></script>
+    <script type="text/javascript"></script>   
+<body>
+    <header class="header__body">
+            <div class="header__div__button" id="header__div__button">
+            <img src="/imagenes/menu.png" alt="">
+        </div>
+        <div>
+            <img class="logo_menu" src="imagenes/Logotipos/logotipo_menu.png" alt="">
+        </div>
+            <div class="div__header__nav">
+            <nav class="header__nav">
+                
+                <ul id="header__nav-list" class="header__nav-list">
+                    <li class="header__nav-list-items">
+                        <a href="#Nosotros" class="header__nav-link">Nosotros</a>
+                    </li>
+                    <li class="header__nav-list-items">
+                        <a href="#Servicios" class="header__nav-link">Servicios</a>
+                    </li>
+                    <li class="header__nav-list-items">
+                        <a href="#Experiencia" class="header__nav-link">Experiencia</a>
+                    </li>
+                    <li class="header__nav-list-items">
+                        <a href="#Contacto" class="header__nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        
+        <div class="main__div__img">
+            <img src="/imagenes/fondo_menu_slogan_1200_1.jpg" alt="fondo_menu_1">
+            <div class="main__div__links">
+                <a href="#" target="_blank"><img src="../imagenes/boton_proyectos.png" alt="Logo Facebook"></a>
+                <a href="#" target="_blank"><img src="../imagenes/boton_proyectos.png" alt="Logo Instagram"></a>
+                <a href="#" target="_blank"><img src="../imagenes/boton_proyectos.png" alt="Logo Whatsapp"></a>
+                <a href="#" target="_blank"><img src="../imagenes/boton_proyectos.png" alt="Logo X"></a>
+            </div>
+        </div>
+        
+        <div id="Nosotros" class="main__div__separador" >
+            <span>Hola mundo</span>
+        </div>
+        
+        <div class="main__div__h1">
+            <h1 >Acerca de Nosotros</h1>
+            
+        </div>
+    
+        <div class="main__div__acerca">
+            <div class="main__div__acerca1">
+                <h2>Misión</h2>
+                <img src="/imagenes/fondo_mision.png" alt="">
+                <p>Ser una empresa integral, que impulse estrategias para promover el desarrollo urbano sustentable y el bienestar, por medio de acciones focalizadas en estrategias de planeación y el fortalecimiento de la administración pública.</p>
+                <p><a href="#myModal">Leer más</a></p>
+            </div>
+            <div class="main__modal" id="myModal">
+                <div class="main__modal__content">
+                    <div class="main__modal__close-btn">
+                        <a class="main__modal__close" href="#Nosotros">&times;</a>
+                    </div>
+                    <!--<h2>Misión</h2>
+                    <p>Ser una empresa integral, que impulse estrategias para promover el desarrollo urbano sustentable y el bienestar, por medio de acciones focalizadas en estrategias de planeación y el fortalecimiento de la administración pública.
+Asimismo, ser una empresa que brinde una adecuada interpretación del territorio para la mejora y la planeación de las actividades que se desarrollan sobre él, ya sean turísticas, culturales, inmobiliarias, comerciales, de transporte, movilidad, de seguridad, socioeconómicas, de salud, educativas, de espacios públicos, entre otros; mismas que deriven en proyectos conceptuales, arquitectónicos y ejecutivos, tanto para la iniciativa privada, como la administración pública.</p>-->
+                    <div class="main__modal__img">
+                        <img src="/imagenes/ventana_mision.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main__div__acerca2">
+                <h2>Visión</h2>
+                <img src="/imagenes/fondo_vision.png" alt="">
+                <p>Otorgar a nuestros clientes servicios de calidad, eficiencia y eficacia, para que sus proyectos sean interpretados como acciones locales, con repercusión en las agendas estatales, nacionales y globales del desarrollo sostenible integral.</p>
+            </div>
+            <div class="main__div__acerca2__relleno"></div>
+        </div>
+        <div id="Servicios" class="main__div__separador_2"></div>
+        <div class="main__div__servicios">
+            <div class="main__div__servicios__titulo">
+                <h2 id="titulo_h2"> NUESTROS <span class="palabra2">SERVICIOS</span></h2>
+            </div>
+            <div class="main__div__overlay">
+            </div>
+            <div class="carrusel">                
+                <div class="mover">
+                <div class="atras">
+                    <img id="atras" src="/imagenes/atras.svg" alt="atras">
+                </div>
+                </div>
+                <div class="imagenes">
+                    <div id="img">
+                        <img class="img" src="imagenes/botones_servicios/boton_servicios_proyectos_fortalecimiento_ordenamiento_territorial_urbano.png">
+                    </div>
+                    <div class="servicios__modal" id="myModal2">
+                        <div class="servicios__modal__content">
+                            <div class="servicios__modal__close-btn">
+                                <a class="servicios_modal__close" href="#Servicios">&times;</a>
+                            </div>
+                            <div id="img2" class="servicios__modal__img">
+                                <img class="img2"  src="imagenes/ventana_servicios_1.png" alt="">
+                            </div>
+                        </div>
+                        </div>
+                    <div id="texto" class="texto">
+                        <p>Proyectos para Fortalecimiento del Ordenamiento Territorial y Urbano</p> 
+                    </div>
+                    <div class="imagenes__div__informacion">
+                        <a class="link" id="link" href="#myModal2">Mas Informacion</a>
+                    </div>
+                </div>
+
+            <div class="adelante" id="adelante">
+                <img src="/imagenes/adelante.svg" alt="adelante">
+            </div>
+                
+            </div>
+            <div class="puntos"  id="puntos"></div>
+            <script src="/codigo_java.js"></script>
+        </div>
+        <div id="Experiencia" class="main__div__separador_3"></div>
+        <div class="main__div__experiencia">
+            <div class="main__div__experiencia__content"> 
+                <div class="main__div__experiencia__titulo">
+                    <h2 >NUESTRA EXPERIENCIA</h2>
+                </div>
+                <div class="main__div__experiencia__img">
+                    <img src="/imagenes/mapa_experiencia.jpeg" alt="mapa">
+                </div> 
+            </div>
+        </div>
+<div id="Contacto" class="main__div__separador_4"></div>   
+<div class="main__div__contacto">
+        <div class="main__div__contacto__content">
+            <h2 class="main__div__contacto__content__titulo" >¡FELICIDADES!</h2>
+            <p>ELEGISTE LA MEJOR OPCIÓN</p>
+        </div>    
+                    <div class="main__div__contacto__overlay">
+            <h3>INGRESA TUS DATOS</h3>
+            <form action = "https://formspree.io/f/xeogdngg" method="post">
+                <div class="main__form__div__input">
+                    <label for="nombre">Nombre(s)</label>
+                    <input type="text" name="Nombre" placeholder="Escribe tu nombre..." id="nombre" required >
+                </div>
+                <div class="main__form__div__input">
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" placeholder="Escribe tus apellidos...." id="apellido" name="Apellidos" required>
+                </div>
+                <div class="main__form__div__input">
+                    <label for="email">Email</label>
+                    <input type="email"  name="email" placeholder="ejemplo@gmail.com" id="email" required >
+                </div>
+                <div class="main__form__div__input">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="message" placeholder="Deja tu mensaje" id="mensaje" required ></textarea>
+                </div>
+                <div class="main__form__div__input">
+                    <button class="main__from__div__input__submit" type="submit">Enviar</button>
+                </div>
+            </form> 
+            <div class="main__div__contacto__overlay__img">
+                <img src="/imagenes/chica_contacto.png" alt="Imagen chica">
+            </div>
+    </div>
+        <div class="main__div__contacto__texto">
+            <!--<h3>Claudia Lucia Rodriguez Rios</h3>
+            <p class="main__div__contacto__texto__p">Lic. Diseño Urbano Ambiental | Benemérita Universidad Autonóma de Puebla</p>
+            <p class="main__div__contacto__texto__p">Mtra. En Sustentabilidad Metropolitana | Colegio de Puebla</p>
+            <p>Directora General</p>-->
+    </div>
+
+    <footer>
+        <div class="footer__div__content1">
+            <div class="footer__div__content1_1">
+                <img src="../imagenes/logotipo_blanco_footer.png" alt="">
+            </div>
+            <div class="footer__div__content1_2">
+                
+            <div class="footer__div__content1_3">
+            <h3>Dirección</h3>
+            <p>Calle Montesori #11 1, Oficina 103, Col. San Pedro</p>
+            <p class="p2">San Pablo del Monte, Tlaxcala C.P. 90980</p>
+            <p class="p3">Teléfono: 222.350.3792</p>
+            <p class="p4">urbyplan.consultores@gmail.com</p>
+            </div>
+            </div>
+            <div class="footer__div__content1_4">
+                <h3>Contácto</h3>
+            <div class="footer__div__content1_5">
+            <a href="https://www.facebook.com/profile.php?id=100093387333407" target="_blank"><img src="../imagenes/boton_facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/urbyplan.consultores/" target="_blank"><img src="../imagenes/boton_instagram.png" alt="Logo Instagram"></a>
+            <a href="https://wa.link/7fcsa9" target="_blank"><img src="../imagenes/boton_whatsapp.png" alt="Logo Whatsapp"></a>
+            <a href="https://x.com/Urbyplan_C?t=xNuQ2Ho4T02uC2QgEky1iw&s=08" target="_blank"><img src="../imagenes/boton_x.png" alt="Logo X"></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer__div__content2">
+            <p> &copy;2025 Derechos Reservados Powered by <span>MARELL AGENCY</span> | <a href="https://urbyplan.mx/archivos_urby/Aviso%20Privacidad%20Integral%20Urbyplan_.pdf" target="_blank">Aviso de Privacidad</a> </p>
+        </div>
+    </footer>
+</body>
+</html>

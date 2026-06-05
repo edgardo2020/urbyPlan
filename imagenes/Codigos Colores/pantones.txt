@@ -1,0 +1,5 @@
+Colores
+Azul Claro: #009cde
+Azul Oscuro: #15334b
+Gris Barra: #b7c4cf
+Gris Fondo: #ececec
