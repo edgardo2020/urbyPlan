@@ -278,6 +278,174 @@ border-radius: 25px;
 }
 
 
+/* Mobile sidebar */
+@media screen and (max-width: 767px) {
+    .header__div__button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        z-index: 70;
+        width: 30px;
+        height: 30px;
+    }
+    .header__div__button img {
+        width: 30px;
+        height: 30px;
+        filter: invert(1);
+    }
+    .div__header__nav {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        background-color: #15334b;
+        z-index: 80;
+        transition: left 0.3s ease;
+        padding-top: 70px;
+    }
+    .div__header__nav.active {
+        left: 0;
+    }
+    .header__nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        height: auto;
+        margin: 0;
+    }
+    .header__nav-list-items {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .header__nav-list-items a {
+        display: block;
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    .header__nav-list-items a:hover {
+        background-color: #009cde;
+        padding: 15px 20px;
+        border-radius: 0;
+    }
+}
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 75;
+}
+.sidebar-overlay.active {
+    display: block;
+}
+
+/* Desktop: nav fuera del header */
+@media screen and (min-width: 768px) {
+    .div__header__nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 55;
+        background-color: #15334b;
+    }
+    .div__header__nav .header__nav-list {
+        flex-direction: row;
+        list-style: inside;
+        height: 80px;
+        padding-left: 50px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    .div__header__nav .header__nav-list-items {
+        background-color: #15334b;
+        padding: 0.7rem;
+    }
+    .div__header__nav .header__nav-list-items:first-child {
+        border-radius: 15px 0 0 15px;
+    }
+    .div__header__nav .header__nav-list-items:last-child {
+        border-radius: 0 15px 15px 0;
+    }
+    .div__header__nav .header__nav-list-items a:hover {
+        color: #fff;
+        background-color: #009cde;
+        padding: 6px;
+        transition: 0.60s;
+    }
+    .header__body {
+        z-index: 60;
+    }
+    .logo_menu {
+        width: 200px;
+        position: absolute;
+        margin-top: 20px;
+        z-index: 61;
+    }
+    .main__div__img img {
+        margin-top: 0;
+    }
+}
+html {
+    scroll-padding-top: 80px;
+}
+@media screen and (min-width: 760px) {
+    .logo_menu {
+        right: 10px;
+    }
+    .div__header__nav .header__nav-list {
+        padding-left: 10px;
+    }
+}
+@media screen and (min-width: 950px) {
+    .logo_menu {
+        right: 100px;
+    }
+    .div__header__nav .header__nav-list {
+        padding-left: 100px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .logo_menu {
+        right: 200px;
+    }
+    .div__header__nav .header__nav-list {
+        padding-left: 200px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .logo_menu {
+        right: 350px;
+    }
+    .div__header__nav .header__nav-list {
+        padding-left: 350px;
+    }
+}
+/* Override inline nav styles from old header for mobile sidebar */
+@media screen and (max-width: 767px) {
+    .div__header__nav .header__nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        height: auto;
+        margin: 0;
+    }
+    .header__body {
+        height: 55px;
+    }
+    main {
+        padding-top: 55px;
+    }
+}
+
 .header__nav-link{
     color: #fff;
     text-transform: uppercase;
@@ -315,6 +483,13 @@ border-radius: 25px;
 
 
 /*--------- Acerca de nosotros section------------*/
+
+#Nosotros,
+#Servicios,
+#Experiencia,
+#Contacto {
+    scroll-margin-top: 80px;
+}
 
 .main__div__separador{
     position: initial;

@@ -163,3 +163,26 @@ function positionCarrusel(){
         }
     }
 }
+
+// Sidebar toggle
+var hamburger = document.getElementById('header__div__button');
+var sidebar = document.querySelector('.div__header__nav');
+var overlay = document.getElementById('sidebar-overlay');
+var header = document.querySelector('.header__body');
+
+function toggleSidebar() {
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+}
+
+function closeSidebar() {
+      // Debug: Verificar el valor del href
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+}
+
+hamburger.addEventListener('click', toggleSidebar);
+overlay.addEventListener('click', closeSidebar);
+
+// Cerrar sidebar al navegar por hash (funciona en movil sin interferir)
+window.addEventListener('hashchange', closeSidebar);
