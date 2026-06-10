@@ -1222,6 +1222,45 @@ transition: all .4s;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
+.mapa__logo{
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    width: 130px;
+    height: auto;
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 901px) {
+    .mapa__logo{
+        bottom: 2px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mapa__logo{
+        right: 10px;
+        bottom: 10px;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mapa__logo{
+        width: 98px;
+        right: 6px;
+        bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .mapa__logo{
+        width: 75px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     #mapa svg{
         background: url("fondo_nuestra_experiencia_950.jpg") center/cover no-repeat;
@@ -1276,6 +1315,37 @@ transition: all .4s;
     .experiencia__lista-estados li{
         font-size: 13px;
         margin-bottom: 2px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .experiencia__lista-estados{
+        max-width: 140px;
+        left: 6px;
+        bottom: 6px;
+    }
+
+    .experiencia__lista-estados li{
+        font-size: 11px;
+        margin-bottom: 1px;
+    }
+
+    .experiencia__lista-estados ul{
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .experiencia__lista-estados{
+        max-width: 110px;
+    }
+
+    .experiencia__lista-estados li{
+        font-size: 9px;
+    }
+
+    .experiencia__lista-estados ul{
+        padding-left: 12px;
     }
 }
 
