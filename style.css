@@ -888,7 +888,71 @@ html {
     overflow: hidden;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1050px) {
+    .carrusel{
+        height: 25vh;
+        position: relative;
+        overflow: visible;
+    }
+    .imagenes{
+        margin-top: 0;
+    }
+    #img .img, .imagenes .img{
+        margin-top: 0;
+        width: 250px !important;
+        height: 250px !important;
+    }
+    .imagenes__div__informacion .link{
+        font-size: 8px;
+    }
+    .imagenes__div__informacion{
+        line-height: 1;
+    }
+    .mover{
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 210px);
+        transform: translateY(-20%);
+    }
+    .atras img, #atras{
+        margin-top: 0;
+        width: 50px;
+    }
+    .adelante{
+        position: absolute;
+        top: 50%;
+        left: calc(50% + 150px);
+        transform: translateY(-20%);
+    }
+    .adelante img, #adelante img{
+        margin-top: 0;
+        width: 50px;
+    }
+    .texto{
+        font-size: 8px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 100%;
+        overflow: visible;
+    }
+    .texto p{
+        margin: 0;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    .servicios__modal__content{
+        width: 240px;
+        height: 240px;
+        padding: 10px 20px;
+    }
+    .servicios__modal__img img{
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:910px) {
     .carrusel{
         height: 25vh;
         position: relative;
@@ -1203,6 +1267,23 @@ pointer-events: none;
     font-weight: 400;
     margin-left: 5px;
     margin-right: 5px;
+    color:#15334b
+    } 
+}
+
+@media screen and (max-width:1050px) {
+    
+.puntos p{
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 0px;
+    color: black;
+}
+
+.puntos .bold{
+    font-weight: 600;
+    margin-left: 2px;
+    margin-right: 2px;
     color:#15334b
     } 
 }
