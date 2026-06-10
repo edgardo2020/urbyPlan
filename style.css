@@ -11,7 +11,7 @@ html, body{
     width: 100%;
     height: auto;
     position: fixed;
-    z-index: 60;
+    z-index: 120;
 }
 
 body{
@@ -282,11 +282,11 @@ border-radius: 25px;
 @media screen and (max-width: 767px) {
     .header__div__button {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 10px;
         left: 10px;
         cursor: pointer;
-        z-index: 70;
+        z-index: 135;
         width: 30px;
         height: 30px;
     }
@@ -302,7 +302,7 @@ border-radius: 25px;
         width: 280px;
         height: 100vh;
         background-color: #15334b;
-        z-index: 110;
+        z-index: 130;
         transition: left 0.3s ease;
         padding-top: 70px;
     }
@@ -340,8 +340,9 @@ border-radius: 25px;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 105;
+    z-index: 125;
 }
+
 .sidebar-overlay.active {
     display: block;
 }
@@ -838,7 +839,6 @@ html {
 .main__div__servicios{
     margin-bottom: 0;
     width: 100%;
-    height: 100%;
     position: relative;
     padding-top: 20px;
     background-image: url('/imagenes/fondo_servicios_1000.png');
@@ -888,6 +888,127 @@ html {
     overflow: hidden;
 }
 
+@media screen and (max-width:900px) {
+    .carrusel{
+        height: 25vh;
+        position: relative;
+        overflow: visible;
+    }
+    .imagenes{
+        margin-top: 0;
+    }
+    #img .img, .imagenes .img{
+        margin-top: 0;
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .imagenes__div__informacion .link{
+        font-size: 8px;
+    }
+    .imagenes__div__informacion{
+        line-height: 1;
+    }
+    .mover{
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 180px);
+        transform: translateY(-20%);
+    }
+    .atras img, #atras{
+        margin-top: 0;
+        width: 50px;
+    }
+    .adelante{
+        position: absolute;
+        top: 50%;
+        left: calc(50% + 100px);
+        transform: translateY(-20%);
+    }
+    .adelante img, #adelante img{
+        margin-top: 0;
+        width: 50px;
+    }
+    .texto{
+        font-size: 10px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .texto p{
+        margin: 0;
+    }
+    .servicios__modal__content{
+        width: 240px;
+        height: 240px;
+        padding: 10px 20px;
+    }
+    .servicios__modal__img img{
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .carrusel{
+        height: 30vh;
+        overflow: visible;
+        position: relative;
+    }
+    .imagenes{
+        margin-top: 0;
+        flex: 0 1 auto;
+    }
+    #img .img, .imagenes .img{
+        margin-top: 0;
+        width: 160px !important;
+        height: 160px !important;
+    }
+    .imagenes__div__informacion .link{
+        font-size: 9px;
+    }
+    .imagenes__div__informacion{
+        line-height: 1;
+    }
+    .mover{
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 140px);
+        transform: translateY(-20%);
+    }
+    .atras img, #atras{
+        margin-top: 0;
+        width: 40px;
+    }
+    .adelante{
+        position: absolute;
+        top: 50%;
+        left: calc(50% + 80px);
+        transform: translateY(-20%);
+    }
+    .adelante img, #adelante img{
+        margin-top: 0;
+        width: 40px;
+    }
+    .texto{
+        font-size: 9px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .texto p{
+        margin: 0;
+    }
+    .servicios__modal__content{
+        width: 220px;
+        height: 220px;
+        padding: 10px 20px;
+    }
+    .servicios__modal__img img{
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+    }
+}
+
 .atras img{
     margin-top: 270px;
     width: 50px;
@@ -907,7 +1028,6 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    position: relative;
     margin-top: 100px
 }
 
@@ -965,19 +1085,25 @@ html {
 /*-------------------ventana Modal inicio servicios-------------*/
 
 .servicios__modal{
-visibility: hidden;
 position: absolute;
-width: 100%;
 top: 0;
-bottom: 0;
-right: 0;
 left: 0;
+width: 100%;
+height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-/*background: rgba(77, 77, 77, .7);*/
-transition: all .4s;
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
 
+}
+
+.servicios__modal:target{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 80;
 }
 
 .servicios__modal__content{
@@ -1023,10 +1149,11 @@ transition: all .4s;
     text-decoration: none;
     font-weight: 800;
     font-size: 20px;
+    color: #fff;
 }
 
 .servicios__modal__close-btn a:hover{
-    color:#15334b;
+    color: #009cde;
 }
 
 .servicios__modal:target{
@@ -1042,6 +1169,7 @@ transition: all .4s;
     font-weight: 100;
     margin-top: 10px;
     padding: 20px;
+    pointer-events: none;
 }
 
 .puntos p{
@@ -1089,7 +1217,6 @@ transition: all .4s;
     height: auto;
     margin: 0;
     margin-top: -45px;
-    z-index: 100;
     position: relative;
     padding-top: 26px;
 }
