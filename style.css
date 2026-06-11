@@ -1141,6 +1141,32 @@ html {
     }
 }
 
+@media screen and (max-width:340px) {
+    .servicios__modal__content{
+        width: 90vw !important;
+        height: 90vw !important;
+        padding: 1vw 1vw 1vw 1vw !important;
+    }
+    .servicios__modal__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicios__modal__img img{
+        width: 80vw !important;
+        height: 80vw !important;
+        margin: 0 !important;
+    }
+    .puntos p{
+        font-size: 8vw !important; 
+        margin-top: 0;
+        line-height: 1;
+    }
+    .puntos .bold{
+        font-size: 8vw;
+    }
+}
+
 .atras img{
     margin-top: 270px;
     width: 50px;
@@ -1321,7 +1347,7 @@ pointer-events: none;
 @media screen and (max-width:400px) {
     
 .puntos p{
-    font-size: 60px;
+    font-size: 40px !important;
     font-weight: 200;
     margin-top: 0px;
     color: black;
