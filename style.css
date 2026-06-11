@@ -888,7 +888,71 @@ html {
     overflow: hidden;
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1280px) {
+    .carrusel{
+        height: 25vh;
+        position: relative;
+        overflow: visible;
+    }
+    .imagenes{
+        margin-top: 0;
+    }
+    #img .img, .imagenes .img{
+        margin-top: 0;
+        width: 20vh !important;
+        height: 20vh !important;
+    }
+    .imagenes__div__informacion .link{
+        font-size: 1.2vh;
+    }
+    .imagenes__div__informacion{
+        line-height: 1;
+    }
+    .mover{
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 22vh);
+        transform: translateY(-50%);
+    }
+    .atras img, #atras{
+        margin-top: 0;
+        width: 4vh;
+    }
+    .adelante{
+        position: absolute;
+        top: 50%;
+        left: calc(50% + 15vh);
+        transform: translateY(-50%);
+    }
+    .adelante img, #adelante img{
+        margin-top: 0;
+        width: 4vh;
+    }
+    .texto{
+        font-size: 14px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 100%;
+        overflow: visible;
+    }
+    .texto p{
+        margin: 0;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    .servicios__modal__content{
+        width: 240px;
+        height: 240px;
+        padding: 10px 20px;
+    }
+    .servicios__modal__img img{
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:800px) {
     .carrusel{
         height: 25vh;
         position: relative;
@@ -1288,6 +1352,22 @@ pointer-events: none;
     } 
 }
 
+@media screen and (max-width:1280px) {
+    
+.puntos p{
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 40px;
+    color: black;
+}
+
+.puntos .bold{
+    font-weight: 600;
+    margin-left: 2px;
+    margin-right: 2px;
+    color:#15334b
+    } 
+}
 /*--------------------Inicio Experiencia-------------------*/
 
 
